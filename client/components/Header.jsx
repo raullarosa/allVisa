@@ -36,8 +36,8 @@ Header = React.createClass({
             color: "white",
             fontSize: "40px",
             paddingTop: "30px"
-    }
-},
+        }   
+    },
 
     handleClick( ) {
         $("#features").scrollView()

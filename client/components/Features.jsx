@@ -4,9 +4,12 @@ Features = React.createClass({
         return (
             <div className="row text-center" style={this.getCssDiv()} id="features">
                 <h1 style={this.getCssTitle() }>Features</h1>
+                <br/>
+                <br/>
                 <div className="row text-center col-md-offset-1">
                     {this.renderFeature1() }
                 </div>
+                <br/>
                 <div className="row text-center col-md-offset-1">
                     {this.renderFeature2() }
                 </div>
@@ -17,7 +20,8 @@ Features = React.createClass({
     getCssDiv() {
         return {
             background:"#FFFFFF",
-            padding: "50px"
+            padding: "50px",
+            height: "100vh"
         }
     },
 
@@ -28,7 +32,7 @@ Features = React.createClass({
     },
     renderFeature1() {
         let features1 = [
-            { id: "0", name: "Overall", img:"./img/overall_icon.png" },
+            { id: "0", name: "Block Card", img:"./img/card_icon.png" },
             { id: "1", name: "Threshold", img:"./img/threshold_icon.png" },
             { id: "2", name: "Time Range", img:"./img/time_icon.png" },
             { id: "3", name: "ATM Withdrawal", img:"./img/atm_icon.png" },
