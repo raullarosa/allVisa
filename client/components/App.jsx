@@ -1,11 +1,10 @@
- clientData = {}
-
 //invoke the server method
 if (Meteor.isClient) {
     Meteor.call("getdocumentID", function(error, results) {
         console.log(results.data);     
     });
 }
+
 
 App = React.createClass({
     render() {
@@ -18,7 +17,4 @@ App = React.createClass({
             </div>
         )
     }
-
-    
-
 });

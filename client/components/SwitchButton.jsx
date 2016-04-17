@@ -3,12 +3,20 @@ SwitchButton = React.createClass({
         return (
             <div className="onoffswitch">
                 <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" />
-                <label className="onoffswitch-label" htmlFor="myonoffswitch"></label>
+                <label className="onoffswitch-label" htmlFor="myonoffswitch">
+                    <span className="onoffswitch-inner"></span>
+                    <span className="onoffswitch-switch"></span>
+                </label>
             </div>
         )
 
-    }
+    },
 
+    getCssButton() {
+        return {
+            width: "90px"
+        }
+    }
 });
 
 
