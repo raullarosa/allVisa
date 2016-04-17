@@ -16,56 +16,81 @@ Great for throwing up quick Meteor/React apps
 ```
 #!cmd
 
-Meteor
+meteor
 ```
+
+What is the problem?
+a college student,
+securing your future
+grocery thing
+instroduce allVisa, 
+take control
+late night snakcing and donating
+money where your mouth is
+
+What is solution?
+Visa devs and our devs
+powerful just as beautiful
+*features and implmentation*
+
+To wrap up
+i want to emphasive on the privilige we have
+top 8% of the wealthy,our application has a unique cahrity fetaure
+explain feature
+1 transcation per day for 30 days and you were to make at least 1 trans a day, 300+ meals per month
+which leads me into the future of our application which would be setting a budget fo what we spend our money
+on depending ont he category and the charity feature, using the visa direct to sned money to 
+non profits who support interests that we are aligned with
+Thank you to Visa and iron hack for support, idea center for venue and emerge for bring us together.
+
+
 
 Features:
 	ON/OFF
-	Alert
-	Overall
+	Block Card
 		Options:
-			- block or allow all transactions
+			- Deactivates all Primary and Secondary cards with the same account number to prevent all new purchases and cash withdrawals at ATM or Points of Sale when enabled.
 			 Consumer Rules API 
 			 - shouldDeclineAll (true or false)
 	Threshold
 		Options:
-			- set the amount limit for transaction
+			- Cardholder purchases are declined when the transaction amount is greater than or equal to the predefined purchase amount
 			 Consumer Rules API 
 			 - declineThreshold(float 12 characters maxed) 
 	Time Range
 		Options:
-			- set a time frame which you will block all transactions
+			- When a Time Range is provided the associated control (block or alert) will only be triggered when the transaction takes place within the provided time range.
 			  Consumer Rules API
 			  - timeRange object
 			  	- startTime and endTime (strings HH:MM)
 	ATM Withdrawals
 		Options:
-			- set an amount for atm withdrawals
+			- Prevents cash withdrawals at ATMs and cashback transactions at points of sale when enabled.
 			 Consumer Rules API
 			 	- controlType (TCT_ATM_WITHDRAW)
 	Brick & Mortar
 		Options:
-			- block or allow all offline purchases
+			- Prohibits all card-present transactions at merchant points of sale.
 			 Consumer Rules API
 			 	- controlType (TCT_BRICK_AND_MORTAR)
 	E-commerce
 		Options:
-			- block or allow all online purchases
+			- Prohibits all card-not-present transactions at e-commerce and Mail Order/Telephone Order (MOTO) merchants when enabled. 
 			 Consumer Rules API
 			 	- controlType (TCT_E_COMMERCE)
 	International
 		Options:
-			- select which countries you allow transactions to be in
+			- Prohibits international card-present transactions whenever the country code of the merchant does not match the country code of the issuer.
 			 Consumer Rules API
 			    - controlType (TCT_CROSS_BORDER)
 	Auto-Pay
 		Options:
-			- block or allow all recurring transactions
+			- Prohibits all automatic bill payments (recurring transactions) associated with the account, such as monthly gym memberships or subscription services.
 			  Consumer Rules API
 			 	- controlType (TCT_AUTO_PAY)
 	Budget
 		Options:
-			- set a budget for general transactions
+			- Set a budget limit for general transactions
 			 Consumer Rules API
 			    - spendLimit (object) 
 				  - type (LMT_MONTH, LMT_WEEK, LMT_DAY)
@@ -75,4 +100,4 @@ Features:
 				  - currentPeriodEnd (string)
 	Charity
 		Options:
-			- donate the leftover cents or a set amount per transaction to a charity of your choice
+			- Donate a set amount per transaction to a charity of your choice
