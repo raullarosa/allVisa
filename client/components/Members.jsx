@@ -19,7 +19,7 @@ Members = React.createClass({
                 </div>
                 <div className="text-center col-md-3">
                     <h2 style={this.getCssName()}>Kelsy Quiroz</h2>
-                    <img src="./img/overall_icon.png" alt="Joel Cedano" height="223" width="200"/>
+                    <img src="./img/kelsy.png" alt="Joel Cedano" height="223" width="200"/>
                     <h4 style={this.getCssPosition()}>Marketing Expert</h4>
                 </div>
             </div>
