@@ -1,11 +1,11 @@
 Header = React.createClass({
     render() {
         return (
-            <div className="row text-center" style={this.getCssDiv() }>
+            <div onClick={this.handleClick} className="row text-center" style={this.getCssDiv() }>
                 <em style={this.getCssTitle()}>allVisa</em>
                 <h1 style={this.getCssDesc()}>Security, Control & Beyond</h1>
                 <h3 style={this.getCssDesc()}>by Slackers</h3>
-                <a onClick={this.handleClick} ><span className="glyphicon glyphicon-chevron-down" style={this.getCssButton() }></span></a>
+                <a  ><span className="glyphicon glyphicon-chevron-down" style={this.getCssButton() }></span></a>
             </div>
         )
     },

@@ -1,21 +1,40 @@
 SwitchButton = React.createClass({
+    getInitialState() {
+        return {
+            text: "Off"
+        }
+    },
+
     render() {
         return (
-            <div className="onoffswitch">
-                <input type="checkbox" name="onoffswitch" className="onoffswitch-checkbox" id="myonoffswitch" />
-                <label className="onoffswitch-label" htmlFor="myonoffswitch">
-                    <span className="onoffswitch-inner"></span>
-                    <span className="onoffswitch-switch"></span>
-                </label>
-            </div>
+            <button ref="btn" onClick={this.handleClick} type="button" className="btn btn-danger">{this.state.text}</button>
         )
 
     },
 
-    getCssButton() {
-        return {
-            width: "90px"
+    componentDidMount() {
+
+    },
+
+    handleClick() {
+        const $btn = $(this.refs.btn)
+
+        if (this.state.text === "Off") {
+            $btn.removeClass("btn-danger")
+            $btn.addClass('btn-success')
+            this.setState({
+                text: "On"
+            })
         }
+
+        if (this.state.text === "On") {
+            $btn.removeClass("btn-success")
+            $btn.addClass('btn-danger')
+            this.setState({
+                text: "Off"
+            })
+        }
+
     }
 });
 

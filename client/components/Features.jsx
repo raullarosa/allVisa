@@ -52,7 +52,7 @@ Features = React.createClass({
             { id: "9", name: "Charity", img:"./img/charity_icon.png" }];
 
         return features2.map((obj) => {
-            return <Feature2 key={obj.id} id={obj.id} name={obj.name} img={obj.img}/>
+            return <Feature1 key={obj.id} id={obj.id} name={obj.name} img={obj.img}/>
         })
         
     }
