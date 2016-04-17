@@ -23,9 +23,5 @@ kadira:flow-router
 kadira:react-layout
 froatsnook:request
 ostrio:meteor-root
-<<<<<<< HEAD
-dandv:http-more
 http
-=======
 twbs:bootstrap
->>>>>>> 36f1267b39a0f489c73a35c36b0f4ae9b408bac0
