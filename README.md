@@ -16,7 +16,7 @@ Great for throwing up quick Meteor/React apps
 ```
 #!cmd
 
-Meteor
+meteor
 ```
 
 What is the problem?
