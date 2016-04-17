@@ -2,7 +2,7 @@ Text = React.createClass({
     render() {
         return (
             <div className="row" style={this.getCss()}>
-
+                {this.props.text}
             </div>
         )
     },

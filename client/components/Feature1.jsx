@@ -5,7 +5,7 @@ Feature1 = React.createClass({
                 <h3 style={this.getCssTitle()}>{this.props.name}</h3>
                 <img src={this.props.img} alt={this.props.name} height="169" width="150"/>
                 <div className="row">
-                    <SwitchButton/>
+                    <SwitchButton data={this.props.data}/>
                 </div>
                 
             </div>

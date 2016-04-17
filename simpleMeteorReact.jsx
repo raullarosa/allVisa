@@ -1,4 +1,6 @@
 if (Meteor.isClient) {
+  Meteor.startup(() => {
+  })
   $.fn.scrollView = function () {
     return this.each(function () {
       var root = $('html, body');

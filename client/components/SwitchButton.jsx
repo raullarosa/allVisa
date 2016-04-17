@@ -1,22 +1,40 @@
 SwitchButton = React.createClass({
-    getInitialState() {
-        return {
-            text: "Off"
-        }
-    },
-
     render() {
+
+        console.log(this.props.data)
+        var Button;
+        if (typeof this.props.data === 'number') {
+            Button = <button ref="btn" onClick={this.handleClick} type="button" className="btn btn-success">{this.props.data}</button>
+        }
+
+        if (this.props.data === true) {
+            Button = <button ref="btn" onClick={this.handleClick} type="button" className="btn btn-success">On</button>
+        }
+        if (this.props.data === false) {
+            Button = <button ref="btn" onClick={this.handleClick} type="button" className="btn btn-danger">Off</button>
+        }
+        
+        if(this.props.data === "TCT_AUTO_PAY") {
+            Button = <button ref="btn" onClick={this.handleClick} type="button" className="btn btn-success">Auto On</button>
+        }
+        
+        if(!this.props.data) {
+            Button = <button ref="btn" onClick={this.handleClick} type="button" className="btn btn-danger">Off</button>
+        }
+      
         return (
-            <button ref="btn" onClick={this.handleClick} type="button" className="btn btn-danger">{this.state.text}</button>
+
+            <div>
+                {Button}
+            </div>
+
         )
 
     },
 
-    componentDidMount() {
-
-    },
 
     handleClick() {
+        console.log(this.props.data)
         const $btn = $(this.refs.btn)
 
         if (this.state.text === "Off") {

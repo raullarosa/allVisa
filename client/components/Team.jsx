@@ -12,7 +12,7 @@ Team = React.createClass({
         return {
             background: "url(http://emergeamericas.org/wp-content/uploads/2015/10/background-oct20151-767x384.jpg) center center fixed",
             width: "100%",
-            height: "30vh",
+            height: "32vh",
             color: "white"
         }
     },
