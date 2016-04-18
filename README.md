@@ -18,6 +18,10 @@ Great for throwing up quick Meteor/React apps
 
 meteor
 ```
+# Responsibility #
+* Joel Cedano: Front/Back-end
+* Raul La Rosa: Design & Front-end
+* Carlos : Back-end & API integration
 
 What is the problem?
 a college student,
