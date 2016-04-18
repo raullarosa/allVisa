@@ -1,7 +1,9 @@
-# Simple Meteor/React template #
+# allVisa #
 
-Great for throwing up quick Meteor/React apps
-
+#### Wireframe
+<p align="center">
+  <img src="https://github.com/raullarosa/emergehackathon2016/blob/master/public/img/eMergeHackathon2016_slackers.jpg"/>
+</p>
 
 # What we are using #
 * Meteor
