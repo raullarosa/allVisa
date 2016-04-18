@@ -51,51 +51,41 @@ Thank you to Visa and iron hack for support, idea center for venue and emerge fo
 
 
 
-Features:
-	ON/OFF
-	Block Card
-		Options:
+####Features:
+*	Block Card
 			- Deactivates all Primary and Secondary cards with the same account number to prevent all new purchases and cash withdrawals at ATM or Points of Sale when enabled.
 			 Consumer Rules API 
 			 - shouldDeclineAll (true or false)
-	Threshold
-		Options:
+*	Threshold
 			- Cardholder purchases are declined when the transaction amount is greater than or equal to the predefined purchase amount
 			 Consumer Rules API 
 			 - declineThreshold(float 12 characters maxed) 
-	Time Range
-		Options:
+*	Time Range
 			- When a Time Range is provided the associated control (block or alert) will only be triggered when the transaction takes place within the provided time range.
 			  Consumer Rules API
 			  - timeRange object
 			  	- startTime and endTime (strings HH:MM)
-	ATM Withdrawals
-		Options:
+*	ATM Withdrawals
 			- Prevents cash withdrawals at ATMs and cashback transactions at points of sale when enabled.
 			 Consumer Rules API
 			 	- controlType (TCT_ATM_WITHDRAW)
-	Brick & Mortar
-		Options:
+*	Brick & Mortar
 			- Prohibits all card-present transactions at merchant points of sale.
 			 Consumer Rules API
 			 	- controlType (TCT_BRICK_AND_MORTAR)
-	E-commerce
-		Options:
+*	E-commerce
 			- Prohibits all card-not-present transactions at e-commerce and Mail Order/Telephone Order (MOTO) merchants when enabled. 
 			 Consumer Rules API
 			 	- controlType (TCT_E_COMMERCE)
-	International
-		Options:
+*	International
 			- Prohibits international card-present transactions whenever the country code of the merchant does not match the country code of the issuer.
 			 Consumer Rules API
 			    - controlType (TCT_CROSS_BORDER)
-	Auto-Pay
-		Options:
+*	Auto-Pay
 			- Prohibits all automatic bill payments (recurring transactions) associated with the account, such as monthly gym memberships or subscription services.
 			  Consumer Rules API
 			 	- controlType (TCT_AUTO_PAY)
-	Budget
-		Options:
+*	Budget
 			- Set a budget limit for general transactions
 			 Consumer Rules API
 			    - spendLimit (object) 
@@ -104,6 +94,5 @@ Features:
 				  - declineThreshold (double)
 				  - alertThreshold (double)
 				  - currentPeriodEnd (string)
-	Charity
-		Options:
+*	Charity
 			- Donate a set amount per transaction to a charity of your choice
